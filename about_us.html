@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Africa Youth Leaders Medical Alliance</title>
+    <link rel="stylesheet" href="About_us.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-aawesome/4.7.0/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+<nav>
+    <a href="index.html"><img src="alyma/Screenshot__7_-removebg-preview.png" width="125"></a>
+    <div class="nav_links" id="navlinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+            <li><a href="">ACTIVITY</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
+</nav>
+<div class="text_box">
+    <h1>About Us</h1>
+</div>
+</section>
+<script>
+var navlinks = document.getElementById("navlinks");
+
+function showmenu(){
+    navlinks.style.right= "0";
+}
+function hidemenu(){
+    navlinks.style.right= "-200px";
+}
+</script>
+</body>
+</html>
