@@ -292,6 +292,10 @@ border-radius: 10px;
     cursor: pointer;
     padding: 18px 0;
 }
-.fa-heart-o{
+.bx bx-heart{
     color: #f44336;
+}
+.menu-toggle {
+  font-size: 2rem;
+  cursor: pointer;
 }
