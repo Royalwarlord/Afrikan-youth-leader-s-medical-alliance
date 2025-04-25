@@ -5,27 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="29I6BqUmVvu3nvSzegEpZybEMaxQveMkZ3vF38KJeS8" />
     <title>The Africa Youth Leaders Medical Alliance</title>
+     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-aawesome/4.7.0/font-awesome.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="header">
 <nav>
-    <a href="index.html"><img src="Screenshot__7_-removebg-preview.png" width="125"></a>
-    <div class="menu-toggle" onclick="toggleMenu()">
+    <a href="index.html" title="Home"><img src="Screenshot__7_-removebg-preview.png" width="125" alt="Logo"></a>
+    <!-- Replace the old menu toggle block with this -->
+<div class="menu-toggle" onclick="toggleMenu()">
   <i class='bx bx-menu' id="menu-icon"></i>
 </div>
-    <div class="nav_links" id="navlinks">
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="about_us.html">ABOUT US</a></li>
-            <li><a href="">ACTIVITY</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">CONTACT</a></li>
-        </ul>
-    </div>
-</nav>
 
+<!-- Change ID here to match JavaScript -->
+<div class="nav_links" id="nav-menu">
+  <ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about_us.html">ABOUT US</a></li>
+    <li><a href="">ACTIVITY</a></li>
+    <li><a href="">BLOG</a></li>
+    <li><a href="">CONTACT</a></li>
+  </ul>
+</div>
+
+</nav>
+<style>
+    .nav_links {
+      display: none;
+    }
+    .nav_links.active {
+      display: block;
+    }
+  </style>
+  
 
 <div class="text_box">
     <h1>The Afrikan Youth Leaders Medical Alliance</h1>
@@ -63,19 +78,19 @@
     <p>We tend to motivate, innovate and Educate Young African Youth for tomorrow's future.</p>
     <div class="row">
         <div class="campus-row">
-            <img src="IMG-20241210-WA0087.jpg">
+            <img src="IMG-20241210-WA0087.jpg" alt="Harris Hospital Center">
             <div class="layer">
                 <h3>Harris Hospital Center</h3>
             </div>
         </div>
         <div class="campus-row">
-            <img src="IMG-20241210-WA0083.jpg">
+            <img src="IMG-20241210-WA0083.jpg" alt="Sowene Secondary School">
             <div class="layer">
                 <h3>Sowene Secondary School</h3>
             </div>
         </div>
         <div class="campus-row">
-            <img src="IMG-20241210-WA0081.jpg">
+            <img src="IMG-20241210-WA0081.jpg" alt="Nairobi Conference">
             <div class="layer">
                 <h3>Nairobi Conference</h3>
             </div>
@@ -92,7 +107,7 @@
     <p>Our esteeemed team during a mentorship program at Sowene Secondary School.</p>
 </div>
 <div class="objective-row">
-    <img src="IMG-20241210-WA0079.jpg">
+    <img src="IMG-20241210-WA0079.jpg" alt="Seasonal Meetings">
     <h3>Meetings</h3>
     <p>Our team during seasonal meet up to celebrate our success.</p>
 </div>
@@ -109,7 +124,7 @@
     <p>These are testimonies and actual opinions about our  services that we do offer.</p>
 <div class="row">
     <div class="testimonials-row">
-        <img src="WhatsApp Image 2024-10-03 at 10.26.14_b064d4a9.jpg">
+        <img src="WhatsApp Image 2024-10-03 at 10.26.14_b064d4a9.jpg" alt="Testimonial from Royal Blue">
         <div>
             <p>I want to sincerely send my gratitude  to AYLMA for their educative forum and support especially in matters concerning our healthcare which is our top priority in our daily life. 
                 Continue to build up young generation for better tomorrow .
@@ -119,7 +134,7 @@
     </div>
    
     <div class="testimonials-row">
-        <img src="HELB.jpg">
+        <img src="HELB.jpg" alt="Testimonial from Joseph David">
         <div>
             <p>I want to sincerely send my gratitude  to AYLMA for their educative forum and support especially in matters concerning our healthcare which is our top priority in our daily life. 
                 Continue to build up young generation for better tomorrow .
@@ -146,22 +161,25 @@
     <i class='bx bxl-whatsapp'>Whatsapp</i>
     <i class='bx bxl-facebook'>Facebook</i> 
 </div>
+<div class="ftp">
 <p>Made with<i class='bx bx-heart'></i> by Royal Blue</p>
+</div>
 </section>
 <script>
-function toggleMenu() {
-  const menu = document.getElementById('nav-menu');
-  const icon = document.getElementById('menu-icon');
-  
-  menu.classList.toggle('active');
-  
-  if (menu.classList.contains('active')) {
-    icon.classList.replace('bx-menu', 'bx-x');
-  } else {
-    icon.classList.replace('bx-x', 'bx-menu');
-  }
-}
-</script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      const icon = document.getElementById('menu-icon');
+      
+      menu.classList.toggle('active');
+      
+      if (icon.classList.contains('bx-menu')) {
+        icon.classList.replace('bx-menu', 'bx-x');
+      } else {
+        icon.classList.replace('bx-x', 'bx-menu');
+      }
+    }
+    </script>
+    
 
 </body>
 </html>
